@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1036763698589",
+    "project_id": "chatsdkcore",
+    "storage_bucket": "chatsdkcore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036763698589:android:d80f986814537b2d528b74",
+        "android_client_info": {
+          "package_name": "com.example.chatsdkcore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036763698589-mda7p97k44pini74tedegnot3rl4nhn7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR1iKIenvBAPb-3QMmD9ahXP29bZb9Hmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036763698589-mda7p97k44pini74tedegnot3rl4nhn7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
