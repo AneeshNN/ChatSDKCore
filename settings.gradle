@@ -1,2 +1,3 @@
+include ':chatapp'
 include ':app'
 rootProject.name = "ChatSDKCore"

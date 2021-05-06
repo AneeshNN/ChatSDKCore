@@ -19,80 +19,80 @@
         android:foregroundGravity="center"
         android:fitsSystemWindows="true">
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dimen_24dp"
-            android:text="@string/sign_in"
-            android:textSize="@dimen/text_extra_large_4"
-            android:fontFamily="cursive"
-            android:textStyle="bold"
-            android:textColor="@color/black_000"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+<!--        <TextView-->
+<!--            android:id="@+id/textView4"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/dimen_24dp"-->
+<!--            android:text="@string/sign_in"-->
+<!--            android:textSize="@dimen/text_extra_large_4"-->
+<!--            android:fontFamily="cursive"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/black_000"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
 
-        <EditText
-            android:id="@+id/loginEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_16dp"
-            android:layout_marginTop="@dimen/dimen_50dp"
-            android:layout_marginEnd="@dimen/dimen_16dp"
-            android:background="@color/grey_16808080"
-            android:drawableStart="@drawable/ic_phone"
-            android:drawablePadding="@dimen/dimen_8dp"
-            android:hint="@{loginVM.editTextHint}"
-            android:minHeight="@dimen/dimen_50dp"
-            android:paddingStart="@dimen/dimen_16dp"
-            android:elevation="@dimen/dimen_0dp"
-            android:paddingEnd="@dimen/dimen_16dp"
-            android:text="@={loginVM.editTextValue}"
-            android:textColor="@color/black_000"
-            android:textColorHint="@color/accent_808080"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
-            android:inputType="textPhonetic"
-            android:textSize="@dimen/text_normal"
-            android:importantForAutofill="no" />
+<!--        <EditText-->
+<!--            android:id="@+id/loginEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/dimen_16dp"-->
+<!--            android:layout_marginTop="@dimen/dimen_50dp"-->
+<!--            android:layout_marginEnd="@dimen/dimen_16dp"-->
+<!--            android:background="@color/grey_16808080"-->
+<!--            android:drawableStart="@drawable/ic_phone"-->
+<!--            android:drawablePadding="@dimen/dimen_8dp"-->
+<!--            android:hint="@{loginVM.editTextHint}"-->
+<!--            android:minHeight="@dimen/dimen_50dp"-->
+<!--            android:paddingStart="@dimen/dimen_16dp"-->
+<!--            android:elevation="@dimen/dimen_0dp"-->
+<!--            android:paddingEnd="@dimen/dimen_16dp"-->
+<!--            android:text="@={loginVM.editTextValue}"-->
+<!--            android:textColor="@color/black_000"-->
+<!--            android:textColorHint="@color/accent_808080"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView4"-->
+<!--            android:inputType="textPhonetic"-->
+<!--            android:textSize="@dimen/text_normal"-->
+<!--            android:importantForAutofill="no" />-->
 
-        <Button
-            android:id="@+id/loginButton"
-            android:layout_width="@dimen/dimen_0dp"
-            android:gravity="center"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_32dp"
-            android:layout_marginTop="@dimen/dimen_16dp"
-            android:layout_marginEnd="@dimen/dimen_32dp"
-            android:background="@color/primary_57DDCE"
-            android:backgroundTint="@color/primary_57DDCE"
-            android:minHeight="@dimen/dimen_55dp"
-            android:onClick="@{() -> loginVM.login()}"
-            android:text="@={loginVM.buttonText}"
-            android:textColor="@color/white_FFFF"
-            android:textSize="@dimen/text_medium"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loginEditText" />
+<!--        <Button-->
+<!--            android:id="@+id/loginButton"-->
+<!--            android:layout_width="@dimen/dimen_0dp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/dimen_32dp"-->
+<!--            android:layout_marginTop="@dimen/dimen_16dp"-->
+<!--            android:layout_marginEnd="@dimen/dimen_32dp"-->
+<!--            android:background="@color/primary_57DDCE"-->
+<!--            android:backgroundTint="@color/primary_57DDCE"-->
+<!--            android:minHeight="@dimen/dimen_55dp"-->
+<!--            android:onClick="@{() -> loginVM.login()}"-->
+<!--            android:text="@={loginVM.buttonText}"-->
+<!--            android:textColor="@color/white_FFFF"-->
+<!--            android:textSize="@dimen/text_medium"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/loginEditText" />-->
 
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="@dimen/dimen_4dp"
-            android:visibility="@{loginVM.progressbarVisibility}"
-            android:indeterminate="true"
-            android:indeterminateTint="@color/white_FFFF"
-            android:indeterminateTintMode="src_atop"
-            app:layout_constraintBottom_toBottomOf="@+id/loginButton"
-            app:layout_constraintEnd_toEndOf="@+id/loginButton"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="@+id/loginButton"
-            app:layout_constraintTop_toTopOf="@+id/loginButton" />
+<!--        <ProgressBar-->
+<!--            android:id="@+id/progressBar"-->
+<!--            style="?android:attr/progressBarStyle"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:elevation="@dimen/dimen_4dp"-->
+<!--            android:visibility="@{loginVM.progressbarVisibility}"-->
+<!--            android:indeterminate="true"-->
+<!--            android:indeterminateTint="@color/white_FFFF"-->
+<!--            android:indeterminateTintMode="src_atop"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/loginButton"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/loginButton"-->
+<!--            app:layout_constraintHorizontal_bias="0.498"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/loginButton"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/loginButton" />-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
