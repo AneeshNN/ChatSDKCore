@@ -41,6 +41,7 @@ class FirebaseRefKeys {
         val TYPE_VERIFICATION_CODE = "type verification code!"
         val VERIFICATION_CODE_WRONG = "Verification code is wrong, Please try again."
         val SIGN_IN = "Sign in success"
+        val SIGN_IN_FAILED = "Sign in failed"
 
         /**
          * Firebase database KEYs
